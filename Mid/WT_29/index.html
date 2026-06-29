@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University Student Support Portal">
+    <title>Student Support Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>University Student Support Portal</h1>
+    <p>Quickly submit your service requests online.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section class="intro">
+        <h2>Our Services</h2>
+        <p>
+            This portal allows students to request transcripts, report ID card
+            issues, and submit general service inquiries anytime.
+        </p>
+    </section>
+
+    <section class="request-form">
+        <h2>Submit Your Request</h2>
+
+        <form>
+
+            <label>Student Name</label>
+            <input type="text" required>
+
+            <label>Student ID</label>
+            <input type="text" maxlength="10" required>
+
+            <label>Email Address</label>
+            <input type="email" required>
+
+            <label>Service Type</label>
+            <select>
+                <option>Transcript</option>
+                <option>ID Card</option>
+                <option>General Inquiry</option>
+                <option>Other</option>
+            </select>
+
+            <label>Urgency</label>
+
+            <div class="radio">
+                <label><input type="radio" name="u"> Low</label>
+                <label><input type="radio" name="u"> Medium</label>
+                <label><input type="radio" name="u"> High</label>
+            </div>
+
+            <label>Additional Details</label>
+            <textarea rows="5"></textarea>
+
+            <input type="submit" value="Send Request">
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Student Affairs Office</p>
+</footer>
+
+</body>
+</html>
